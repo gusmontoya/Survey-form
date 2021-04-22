@@ -1,0 +1,167 @@
+    @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,400;1,600&display=swap');
+    /*-----------------------------*/
+    /*   Basic Setup  */
+    /*-----------------------------*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html { 
+      font-family: "Cabin", sans-serif;
+    }
+    .container {
+
+        background-size:100%;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        height:100%;
+        width:100%;
+      }
+      header {
+        margin: 20px;
+        height: 450px;
+        width: auto;
+        text-align: center;
+        background-image: url('https://camo.githubusercontent.com/d069971a0af4d9e393066dc77ced000cff23a1f6bbfbb9e7704a870192a926ca/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f66726565636f646563616d702f776964652d736f6369616c2d62616e6e65722e706e67');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+      } 
+      h1 {
+      padding-top: 70px;
+      color: rgb(65, 90, 75);
+    }
+    
+      #description {
+        padding: 20px;
+        top: 250px;
+        color:rgb(55, 80, 55);
+      } 
+      #survey-form {
+        /*text-align: center;*/
+      }
+      .name-container {
+      text-align: center;
+      }
+    #name {
+      width: 180px;
+      height: 15px;
+      margin-bottom: 10px;
+   
+    }
+    .email-container {
+      text-align: center;
+    }
+    #email {
+      width: 180px;
+      height: 15px;
+      margin-left: 3px;
+      margin-bottom: 10px;
+      
+    }
+    .age-container {
+      text-align: center;
+    }
+    #number {
+      padding-right: 100px;
+      margin-left: 3px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .first-dpDown {
+      text-align: center;
+    }
+    #role {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    #dropdown {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .friend-recommend {
+      text-align: center;
+    }
+    #recommend {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .favorite{
+      text-align: center;
+    }
+    #favorite {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .improvement {
+      text-align: center;
+    }
+    #improved {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    #improve {
+      margin-bottom: 15px;
+      text-indent: 5px;
+    }
+    label {
+      text-indent: 5px;
+    }
+    .improve-1 {
+      padding-left: 0.4em;
+    }
+    .improve-2 {
+      padding-left: 0.4em;
+    }
+    .improve-2 {
+      padding-left: 0.4em;
+    }
+    .improve-3 {
+      margin-right: 8px;
+      padding-left: 0.4em;
+    }
+    .improve-4 {
+      margin-right: 50px;
+      padding-left: 0.4em;
+    }
+    .improve-5 {
+      margin-right: 30px;
+      padding-left: 0.4em;
+    }
+    .improve-6 {
+      margin-right: 50px;
+      padding-left: 0.4em;
+    }
+    .improve-7 {
+      margin-right: 85px;
+      padding-left: 0.4em;
+    }
+    .improve-8 {
+      margin-right: 40px;
+      padding-left: 0.4em;
+    }
+    .improve-9 {
+      margin-right: 95px;
+      padding-left: 0.4em;
+    }
+    .improve-10 {
+      margin-right: 85px;
+      padding-left: 0.4em;
+    }
+    .suggestions {
+      text-align: center;
+    }
+    #comments {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .sub {
+      text-align: center;
+      padding-bottom: 40px;;
+    }
+    #submit {
+      margin-top: 15px;
+      text-align: center;
+    }
