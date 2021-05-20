@@ -1,141 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <title>Responsive Made Easy</title>
-</head>
-
-<body>
-    <header id="header"> <!--class=nav--> 
-        <nav id="nav-bar"><!--div class=menu-->
-                <a href="#"><img id="header-img" src="images/LogoC.svg" alt="Vew from tent"></a>
-            <ul class="links"><!--class=logo-->
-                <li><a class="nav-link" href="#header">Home</a></li>
-                <li><a class="nav-link" href="#benefits">Benefits</a></li>
-                <li><a class="nav-link" href="#media">Media</a></li>
-                <li><a class="nav-link" href="#resources">Resources</a></li>
-                <li><a class="nav-link" href="#register">Register</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <div class="bg-light text-center">
-            <div class="container container--narrow">
-                <h1 class="main-quote">Unwind and disconnect for a day in the lap of nature!</h1>
-            </div>
+  <html>
+        <head>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="styles.css" />
+          <title>freeCodecamp survey</title>
+      </head>
+    <body>
+    <!--heading of survey-->
+    <div class="container"> 
+      <header class="header">
+          <h1 id="title">freeCodeCamp Survey Form</h1>
+          <p id="description"> <em>Please take the time to fill out this short suirvey to improve the platform</em></p>
+      </header>
+    <!--Start of registration form-->
+      <form id="survey-form">
+          <div class="form-group">
+                <div class="name-container">
+                  <label id="name-label" for="name">Name:</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+          </div>
+          </div>
+    <!--email--->
+          <div class="form-group">
+              <div class="email-container"> 
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" class="form-control"  placeholder="Enter your email" required/>
+          </div>
         </div>
-    </section>
-            
-    <section id="benefits">
-        <h2 id="dark" class="text-center">Benefits of being with nature</h2>
-        <hr class="style1"> 
-        <div class="split" id="reasons"> <!--Going to use display: flex;-->
-            <div>
-                <h2 id="dark">THE FRESH AIR</h2>
-                <p class="explained">When you spend time near a lot of trees, you take in more oxygen. Your body can function with less strain when there's plenty of oxygen.
-                    That's not the only benefit of fresh air. Research shows that some time outdoors can improve your blood pressure, improve digestion and
-                    give your immune system an extra boost. When you spend a few days outside, you get some serious health benefits from the extra oxygen and
-                    low levels of pollutants.</p>
+        <!--age--->
+          <div class="form-group">
+            <div class="age-container">
+                <label id="number-label" for="number">Age:</label>
+                <input type="number" name="age" id="number" min="18" max="120" placeholder="Enter your age"/>
             </div>
-            <div>
-                <h2 id="dark">IMPROVED MOODS</h2>
-                <p class="explained">Regular campers will often talk about how the first few days back from a trip seem happier. This isn't without merit; spending some time 
-                    outside in the sunlight can even out the levels of melatonin in your brain. Melatonin is the chemical that makes you feel tired and can
-                    induce feelings of depression, so by camping, you can enjoy better overall moods during and after your trip.</p>
-            </div>
-            <div>
-                <h2 id="dark">LESS STRESS</h2>
-                <p class="explained">Camping also allows you to cope with stress. Stress can negatively affect your health in just about every way possible, and you're putting 
-                    much less strain on your mental and physical faculties by giving yourself some stress-free time at the campsite. The lack of stress is
-                    related to the rise in oxygen levels, higher levels of serotonin and managed levels of melatonin mentioned above. </p>
-            </div>
+          </div>
+    <!--Drop down - options.-->
+        <div class="form-group">
+          <div class="first-dpDown">
+              <p id="role">Which option best describes your current status?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value> Select your current role</option>
+        <option value="student">I am currently a student</option>
+        <option value="job">I have a full time job</option>
+        <option value="preferNot">I am executing a career change</option>
+        <option value="preferNot">Prefer not to say</option>
+        </select>
+      </div>
         </div>
-    </section>
-        
-    <section id="media" class="bg-light" class="text-center">
-        <div class="container">
-            <div class="split-video">
-                <h2 id="dark" class="desc-vid">Please watch this short video</h2>
-                <hr class="style1"> 
-                <div class="video-link">
-                    <iframe width="620" height="515" src="https://www.youtube.com/embed/yfLz54hzpPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="resources" class="bg-dark">
-        <div class="container">
-            <div class="split">
-                <div class="para">
-                    <h2>Pristine wilderness to explore</h2>
-                    <p> California has over 51 parks with more than 4.3 miilion acres to see. 
-                        Each special with their own geography, climate and unique wild life. 
-                        For a complete list of parks please <a href="http://www.totalescape.com/outside/destinations/california-wilderness-list/"> click here</a>.
-                    </p>
-                </div>
-                <div>
-                    <img src="https://cdn.wallpapersafari.com/10/27/stNO8G.jpg" alt="picture of forest river">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-primary">
-        <div class="container">
-            <div class="split">
-                <div>
-                    <img src="https://www.boundless.co.uk/-/media/Images/Articles/Walking%20as%20a%20family/Family-walk-forest-mum-kids.ashx?cw=770&ch=445&hash=324100BF494504C14EE1DFB755558D6D58F3D50D" alt="picture of forest">
-                </div>
-                <div class="para">
-                    <h2>Endless trails to hike</h2>
-                    <p>California has miles upon miles od trails to hike and enjoy. One has to go prepared and follow safe practices to enjoy to their fullest. Plan early and diligently and pair 
-                        your hiking skill level to the appropriate trail. For a complete list of tails and safety guidelines clink on this <a href="https://www.traillink.com/stateactivity/ca-hiking-trails/">link here.</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="register" class="text-center">
-        <h1 id="free">Nature is free, for everyone! Only give a donation at the entrance of each park.</h1>
-            <h2>Register today to reserve a camp site!</h2>
-            <hr class="style1"> 
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <!--Radio button -Recommend--> 
+      <div class="form-group">
+          <p id="recommend">Would you recommend freeCodeCamp to a friend?</p>
+      <div class="friend-recommend">
+      <label>
+          <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+                />Absolutely</label>
+      <label>
+          <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+                />Probably</label>
+      <label>
+          <input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+                />No not at all</label>
+      </div>
+    </div>
+    <!-- Drop down - feature-->
+      <div class="form-group">
+      <div class="favorite">
+            <p id="favorite">What part of freeCodeCamp do you like best?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value> Select favorite feature</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Small modules</option>
+              <option value="openSource">Easy to understand instructions</option>
+            </select>
+      </div>
+      </div>
+    <!--Checkbox - Improve-->
+    <div class="form-group"> 
+      <div class="improvement">
+                <p id="improved"What improvement should we implement  ? (Check all that apply)</p>
+      <label class="improve-1">
+        <input 
+        id="improve"
+        name="improve"
+        value="front-end-project"
+        type="checkbox"
+        class="input-checkbox"
+        />Front end projects
+      </label>
+    <br>
+      <label class="improve-2">
+        <input  
+         id="improve"
+         name="improve"
+         value="back-end-projects"
+         type="checkbox" 
+         class="input-checkbox"
+          />Back end projects
+          </label>
+    <br>
+      <label class="improve-3"> 
         <input
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Enter your email address"
-            required
-            />
-            <input id="submit" type="submit" value="Get Started"
-            class="btn"/>
-        </form>
-    </section>
-            
-    <footer>
-        <div  id="copy-right">
-            <span>Copyright 2021, Demo by Gus</span>
-        </div>
-        <div id="footer-list"> 
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </footer>
-    
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        id="improve"
+        name="improve"
+        value="data-visualization"
+        type="checkbox" 
+        class="input-checkbox"
+        />Additional practice for each segment
+        </label>
+        <br>
+      <label class="improve-4">
+        <input  
+        id="improve"
+        name="improve" 
+        value="challenges"
+        type="checkbox"
+        class="input-checkbox"
+        />Challenges that had clearer instructions
+      </label>
+    <br>
+      <label class="improve-5"> 
+<input 
+        id="improve"
+        name="improve" 
+        value="open-source"
+        type="checkbox" 
+        class="input-checkbox"
+        />Add introduction to webpage layout and organization
+      </label>
+    <br>
+    </div>
+
+    </div>
+    <!--Box Suggestions-->
+    <div class="form-group">'
+      <div class="suggestions">
+          <p id="comments">Any comments or suggestions that can help us improve our cause?</p>
+            <textarea
+                      id="suggestions"
+                      class="input-textarea"
+                      name="suggestion"
+                      rows="5"
+                      cols="40"
+                      placeholder="Please enter your comments here..."> 
+            </textarea>
+      </div>
+    </div>
+    <!--Button Submit-->
+    <div class="form-group">
+      <div class="sub">
+          <button type="submit"  id="submit" class="submit-button">Submit</button>
+      </div>
+    </div>
+  </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
